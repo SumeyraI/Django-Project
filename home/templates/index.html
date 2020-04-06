@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ilk django</title>
-</head>
-<body>
-<h1>hoşgeldin</h1>
-<p>
-    {{ text }}
-</p>
+{% extends "homebase.html" %}
 
-</body>
-</html>
+{% block title %} İndex Sayfası{% endblock %}
+{% block keywords %} İndex Sayfası Anahtar kelimeler{% endblock %}
+{% block description %} İndex Sayfası Acıklama{% endblock %}
+
+{% block sidebar %}
+
+
+{% endblock %}
+
+{% block slider %}
+    {% include "slider.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+    {% include "content.html" %}
+{% endblock %}
