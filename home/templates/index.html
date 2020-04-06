@@ -1,8 +1,12 @@
 {% extends "homebase.html" %}
 
-{% block title %} İndex Sayfası{% endblock %}
-{% block keywords %} İndex Sayfası Anahtar kelimeler{% endblock %}
-{% block description %} İndex Sayfası Acıklama{% endblock %}
+{% block title %} {{ setting.title }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
 
 {% block sidebar %}
 
