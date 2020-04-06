@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/food/migrations/0003_auto_20200406_1450.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/italianodetay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/italianodetay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/italian-pizza.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/margarita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/pide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/pizzaa.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,7 @@
       <workItem from="1585938010661" duration="5919000" />
       <workItem from="1585944954150" duration="1461000" />
       <workItem from="1586002874045" duration="1240000" />
-      <workItem from="1586170623407" duration="4877000" />
+      <workItem from="1586170623407" duration="12689000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586172601432</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="7.video : Admin Resim Galerisi Yapıldı.">
+      <created>1586175578488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586175578488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,17 +123,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="6.video : Hazır Web Template Uyarlaması Yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="6.video : Hazır Web Template Uyarlaması Yapıldı." />
+    <MESSAGE value="7.video : Admin Resim Galerisi Yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="7.video : Admin Resim Galerisi Yapıldı." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586172600046">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586175578056">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586172600046" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586172764563">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586175578056" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586175597521">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586172764563" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586175597521" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586170646463">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
