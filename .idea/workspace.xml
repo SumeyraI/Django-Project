@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/food/migrations/0004_auto_20200406_1809.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0002_auto_20200406_2110.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/icon_DyL_icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/iconn_16v_icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/son.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/sonicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2020/04/06/italiano-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2020/04/06/italiano-1_thumb.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +97,7 @@
       <workItem from="1586002874045" duration="1240000" />
       <workItem from="1586170623407" duration="15616000" />
       <workItem from="1586195979077" duration="585000" />
-      <workItem from="1586196583199" duration="2533000" />
+      <workItem from="1586196583199" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -126,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586184438805</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="9.video : Setting Ayarlar dinamik Favicon">
+      <created>1586200121553</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586200121553</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,17 +138,18 @@
     <MESSAGE value="6.video : Hazır Web Template Uyarlaması Yapıldı." />
     <MESSAGE value="7.video : Admin Resim Galerisi Yapıldı." />
     <MESSAGE value="8.video : Adminde yuklenen resimlerin gosterilmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.video : Adminde yuklenen resimlerin gosterilmesi" />
+    <MESSAGE value="9.video : Setting Ayarlar dinamik Favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="9.video : Setting Ayarlar dinamik Favicon" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586184438205">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586200120961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586184438205" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586184452879">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586200120961" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586200134070">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586184452879" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586200134070" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586196585401">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
