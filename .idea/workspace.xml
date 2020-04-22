@@ -2,21 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/referanslarimiz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food/migrations/0005_auto_20200408_1930.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food/migrations/0006_auto_20200422_2123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0003_auto_20200408_1930.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0004_auto_20200422_2123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/iconn_16v_icon_tvaH1iG.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/pide_lqy93k6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/son_v3N_icon_wPWZwm3.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,7 +123,18 @@
       <workItem from="1586195979077" duration="585000" />
       <workItem from="1586196583199" duration="5155000" />
       <workItem from="1586269969029" duration="2338000" />
-      <workItem from="1586347663536" duration="7228000" />
+      <workItem from="1586347663536" duration="7463000" />
+      <workItem from="1586362846955" duration="6645000" />
+      <workItem from="1586945312433" duration="3889000" />
+      <workItem from="1586976334199" duration="8808000" />
+      <workItem from="1587027793110" duration="2795000" />
+      <workItem from="1587044199511" duration="4543000" />
+      <workItem from="1587052720596" duration="2908000" />
+      <workItem from="1587056012007" duration="291000" />
+      <workItem from="1587057284826" duration="195000" />
+      <workItem from="1587156007876" duration="2748000" />
+      <workItem from="1587159381407" duration="125000" />
+      <workItem from="1587575683122" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -140,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586202730814</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="12.video :  İletişim, hakkımızda, referanslar sayfalarının oluşturuldu.">
+      <created>1586355422439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355422439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,20 +191,21 @@
     <MESSAGE value="8.video : Adminde yuklenen resimlerin gosterilmesi" />
     <MESSAGE value="9.video : Setting Ayarlar dinamik Favicon" />
     <MESSAGE value="11.video :  Admin panel ckeditor zengin mentin editoru kullanımı" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.video :  Admin panel ckeditor zengin mentin editoru kullanımı" />
+    <MESSAGE value="12.video :  İletişim, hakkımızda, referanslar sayfalarının oluşturuldu." />
+    <option name="LAST_COMMIT_MESSAGE" value="12.video :  İletişim, hakkımızda, referanslar sayfalarının oluşturuldu." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586202730338">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1586355421736">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586202730338" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586202747508">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586355421736" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586355432853">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586202747508" />
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586347669195">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586355432853" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587575710546">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586347669195" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1587575710546" />
   </component>
 </project>

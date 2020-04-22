@@ -15,12 +15,55 @@
         <div class="bg">
             <div class="row">
 
-                    <div id="gmap" class="contact-map">
-                        {{setting.contact | safe}}
+                <div class="col-sm-4">
+                    <div class="contact-form">
+                        <h2 class="title text-center">İLETİŞİM FORMU</h2>
+                        <div class="status alert alert-success" style="display: none"></div>
+
+
+                        {% if messages %}
+                        {%  for message in messages %}
+                            <div class="alert alert-{{ message.tags}}" role="alert">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                        <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+
+                            {%  csrf_token %}
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" name="subject" class="form-control" required="required" placeholder="Subject">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your Message Here"></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+                            </div>
+                        </form>
                     </div>
+
+
+
+
+                </div>
+
+
+            <div class="col-sm-8">
+                <h2 class="title text-center">İLETİŞİM BİLGİLERİMİZ</h2>
+                {{setting.contact | safe}}
             </div>
-             <div class="row">
-             </div>
         </div>
+        <div class="row">
+        </div>
+    </div>
+    </div>
     </div><!--/#contact-page-->
 {% endblock %}
