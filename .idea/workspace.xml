@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/food/migrations/0007_auto_20200428_0109.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/food/migrations/0008_auto_20200428_1815.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/gennaro-pizza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/mevsim-etli-pizza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/pizzalar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/sebzeli-pizza-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/tavuklu-pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/adaan7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/adana2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/adana4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/adana6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/adanakbp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/hamburger-et.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/hamburger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/kebap1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/kiymali-pide-tarifi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/makarna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/margarita1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/penne-arrabbiata-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/penne1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/penne2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/tavuk-hamburger.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +151,7 @@
       <workItem from="1588692528063" duration="2220000" />
       <workItem from="1588705977459" duration="9222000" />
       <workItem from="1588755954165" duration="5996000" />
-      <workItem from="1588763947608" duration="3938000" />
+      <workItem from="1588763947608" duration="12715000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -194,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587580716131</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="15. video kategori ve alt kategori menu yapıldı.">
+      <created>1588768232459</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588768232460</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,17 +224,18 @@
     <MESSAGE value="11.video :  Admin panel ckeditor zengin mentin editoru kullanımı" />
     <MESSAGE value="12.video :  İletişim, hakkımızda, referanslar sayfalarının oluşturuldu." />
     <MESSAGE value="Contact form ve slider yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact form ve slider yapıldı." />
+    <MESSAGE value="15. video kategori ve alt kategori menu yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="15. video kategori ve alt kategori menu yapıldı." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1587580715560">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1588768231829">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587580715560" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587580728393">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588768231829" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588768250535">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587580728393" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588768250535" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588763947925">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
