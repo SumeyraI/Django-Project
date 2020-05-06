@@ -3,15 +3,17 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
-from food.models import Food
+from food.models import Food, Category
 from home.models import Setting, ContactFormu, ContactFormMessage
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
+    category = Category.objects.all()
     sliderdata = Food.objects.all()[:4]
     context = {'setting': setting,
                'page':'home',
+               'category':category,
                'sliderdata':sliderdata}
     return render(request, 'index.html', context)
 
