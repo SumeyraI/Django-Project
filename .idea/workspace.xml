@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,7 @@
       <workItem from="1588802941992" duration="1948000" />
       <workItem from="1588805843604" duration="3101000" />
       <workItem from="1588809895770" duration="979000" />
-      <workItem from="1588839483768" duration="3506000" />
+      <workItem from="1588839483768" duration="12678000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588780511827</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="17.video anasayfa ürün gösterilmesi yapıldı.">
+      <created>1588843034398</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588843034398</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,17 +229,18 @@
     <MESSAGE value="Contact form ve slider yapıldı." />
     <MESSAGE value="15. video kategori ve alt kategori menu yapıldı." />
     <MESSAGE value="16.video Kategori ürünlerini gösterme yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="16.video Kategori ürünlerini gösterme yapıldı." />
+    <MESSAGE value="17.video anasayfa ürün gösterilmesi yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="17.video anasayfa ürün gösterilmesi yapıldı." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1588780511407">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1588843033720">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588780511407" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588780524264">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588843033720" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588843051883">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588780524264" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588843051883" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588839492111">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
