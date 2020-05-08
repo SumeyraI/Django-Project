@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from mptt.admin import MPTTModelAdmin, DraggableMPTTAdmin
 
-from food.models import Category, Food, Images
+from food.models import Category, Food, Images,Comment
 
 class FoodImageInline(admin.TabularInline):
     model = Images
@@ -63,12 +63,16 @@ class ImagesAdmin(admin.ModelAdmin):
     readonly_fields = ('image_tag',)
 
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['subject', 'comment', 'food', 'user', 'status']
+    list_filter = ['status']
 
 
 
 admin.site.register(Category,CategoryAdmin2)
 admin.site.register(Food,FoodAdmin)
 admin.site.register(Images,ImagesAdmin)
+admin.site.register(Comment,CommentAdmin)
 
 
 

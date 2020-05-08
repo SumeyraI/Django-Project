@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food/migrations/0009_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food/migrations/0010_auto_20200507_1655.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/products_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/food/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
@@ -58,6 +68,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Django\project1\home\templates" />
+      <recent name="C:\Django\project1\home" />
       <recent name="C:\Django\project1\food" />
     </key>
   </component>
@@ -140,7 +151,9 @@
       <workItem from="1588802941992" duration="1948000" />
       <workItem from="1588805843604" duration="3101000" />
       <workItem from="1588809895770" duration="979000" />
-      <workItem from="1588839483768" duration="12678000" />
+      <workItem from="1588839483768" duration="19454000" />
+      <workItem from="1588866103191" duration="4078000" />
+      <workItem from="1588932386463" duration="20736000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -212,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588843034398</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="18.video Django E ticaret Urun detay resim galerisi yapıldı.">
+      <created>1588852348468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588852348468</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,20 +250,21 @@
     <MESSAGE value="15. video kategori ve alt kategori menu yapıldı." />
     <MESSAGE value="16.video Kategori ürünlerini gösterme yapıldı." />
     <MESSAGE value="17.video anasayfa ürün gösterilmesi yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="17.video anasayfa ürün gösterilmesi yapıldı." />
+    <MESSAGE value="18.video Django E ticaret Urun detay resim galerisi yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="18.video Django E ticaret Urun detay resim galerisi yapıldı." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1588843033720">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1588852347880">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588843033720" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588843051883">
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588852347880" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588852364244">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588843051883" />
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588839492111">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588852364244" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588932389152">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588839492111" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588932389152" />
   </component>
 </project>
