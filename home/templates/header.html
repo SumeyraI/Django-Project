@@ -45,37 +45,32 @@
                     <div class="logo pull-left">
                         <a href="/"><img src="{% static 'images/home/logo.png' %}" alt="" /></a>
                     </div>
-                    <div class="btn-group pull-right clearfix">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                USA
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Canada</a></li>
-                                <li><a href="">UK</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                DOLLAR
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Canadian Dollar</a></li>
-                                <li><a href="">Pound</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-8 clearfix">
-                    <div class="shop-menu clearfix pull-right">
+                    <div class="mainmenu pull-right">
                         <ul class="nav navbar-nav">
+
+
+
+
 
                             {% if user.id is not None %}
 
-                                <li><a href=""><i class="fa fa-user"></i> {{ user.first_name }}</a></li>
+                                <li>
+                                    <img class="media-object" src="{% static 'images/blog/man-two.jpg' %}" style="width: 60px" height="50px" alt="">
+                                </li>
+
+
+                                <li class="dropdown"><a href="#"><i class="fa fa-user"></i>{{ user.first_name }}</a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="/user"><i class="fa fa-user"></i> My Account</a></li>
+                                        <li><a href="checkout.html"><i class="fa fa-comment"></i> My Comments </a></li>
+                                        <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> My Orders</a></li>
+                                        <li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+
                                 <li><a href="/logout/"><i class="fa fa-sign-out"></i> Logout</a></li>
 
                             {% else %}
@@ -88,13 +83,6 @@
 
 
                             {% endif %}
-
-
-
-                            <li><a href="checkout.html"><i class="fa fa-comment"></i> My Comments </a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> My Orders</a></li>
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-
 
                         </ul>
                     </div>
@@ -144,22 +132,22 @@
 
                 <script>
 
-        $(function() {
-            $("#query").autocomplete({
-                source: "/search_auto/",
-                select: function (event, ui) { //item selected
-                    AutoCompleteSelectHandler(event, ui)
-                },
-                minLength: 2,
-            });
-        });
+                    $(function() {
+                        $("#query").autocomplete({
+                            source: "/search_auto/",
+                            select: function (event, ui) { //item selected
+                                AutoCompleteSelectHandler(event, ui)
+                            },
+                            minLength: 2,
+                        });
+                    });
 
-        function AutoCompleteSelectHandler(event, ui)
-        {
-            var selectedObj = ui.item;
-        }
+                    function AutoCompleteSelectHandler(event, ui)
+                    {
+                        var selectedObj = ui.item;
+                    }
 
-    </script>
+                </script>
 
 
                 <div class="col-sm-6">
