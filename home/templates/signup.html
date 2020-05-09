@@ -1,0 +1,76 @@
+{% extends "homebase.html" %}
+
+{% block title %} Sign Up Page {{ setting.company }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %} {% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="row">
+
+                <div class="col-sm-12">
+                
+
+                    <div class="contact-form">
+                        <h2 class="title text-center">SIGN UP FORMU</h2><br>
+                        <br>
+                        <br>
+                        <div class="status alert alert-success" style="display: none"></div>
+
+
+                        {% if messages %}
+                            {%  for message in messages %}
+                                <div class="alert alert-{{ message.tags}}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+
+                        <form method="post">
+
+                            {%  csrf_token %}
+
+                            {% for field in form %}
+                                <p>
+                                    {{ field.label_tag }}<br>
+                                    {{ field }}
+                                    {% if field.help_text %}
+                                        <small style="color: grey">{{ field.help_text }}</small>
+                                    {% endif %}
+                                    {% for error in field.errors %}
+                                        <p style="color: red">{{ error }}</p>
+                                    {% endfor %}
+                                </p>
+                            {% endfor %}
+
+
+                            <div class="form-group col-md-12">
+                                <input type="submit" name="submit" class="btn btn-primary pull-right" value="Sign Up">
+                            </div>
+                        </form>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+            <div class="row">
+
+
+            </div>
+        </div>
+    </div>
+    </div><!--/#contact-page-->
+{% endblock %}

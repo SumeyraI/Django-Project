@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+from django.urls import reverse
 from django.utils.safestring import mark_safe
 from ckeditor_uploader.fields import RichTextUploadingField
 from mptt.fields import TreeForeignKey
@@ -19,7 +20,7 @@ class Category(MPTTModel):
     description = models.CharField(max_length=255, blank=True)
     image = models.ImageField(blank=True, upload_to='images/')
     status = models.CharField(max_length=10, choices=STATUS)
-    slug = models.SlugField()
+    slug = models.SlugField(null=False, unique=True)
     parent = TreeForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
@@ -41,6 +42,12 @@ class Category(MPTTModel):
         return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
     image_tag.short_description = 'Image'
 
+
+    def get_absolute_url(self):
+        return reverse('category_detail', kwargs={'slug': self.slug})
+
+
+
 class Food(models.Model):
     STATUS = (
         ('True', 'Evet'),
@@ -54,7 +61,7 @@ class Food(models.Model):
     price = models.FloatField()
     amount = models.IntegerField()
     detail = RichTextUploadingField()
-    slug = models.SlugField(max_length=150, blank=True)
+    slug = models.SlugField(null=False, unique=True)
     status = models.CharField(max_length=10, choices=STATUS)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
@@ -68,6 +75,9 @@ class Food(models.Model):
 
     def catimg_tag(self):
         return mark_safe((Category.status))
+
+    def get_absolute_url(self):
+        return reverse('product_detail', kwargs={'slug': self.slug})
 
 class Images(models.Model):
     food=models.ForeignKey(Food,on_delete=models.CASCADE)

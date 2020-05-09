@@ -22,24 +22,25 @@ class CategoryAdmin2(DraggableMPTTAdmin):
     list_display = ('tree_actions', 'indented_title',
                     'related_products_count', 'related_products_cumulative_count')
     list_display_links = ('indented_title',)
+    prepopulated_fields = {'slug': ('title',)}
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
 
         # Add cumulative product count
         qs = Category.objects.add_related_count(
-                qs,
-                Food,
-                'category',
-                'products_cumulative_count',
-                cumulative=True)
+            qs,
+            Food,
+            'category',
+            'products_cumulative_count',
+            cumulative=True)
 
         # Add non cumulative product count
         qs = Category.objects.add_related_count(qs,
-                 Food,
-                 'category',
-                 'products_count',
-                 cumulative=False)
+                                                Food,
+                                                'category',
+                                                'products_count',
+                                                cumulative=False)
         return qs
 
     def related_products_count(self, instance):
@@ -54,9 +55,10 @@ class CategoryAdmin2(DraggableMPTTAdmin):
 
 class FoodAdmin(admin.ModelAdmin):
     list_display = ['title', 'category', 'price', 'amount', 'image_tag', 'status']
-    readonly_fields = ('image_tag',)
+    readonly_fields = ('image_tag','catimg_tag')
     list_filter = ['status', 'category']
     inlines = [FoodImageInline]
+    prepopulated_fields = {'slug': ('title',)}
 
 class ImagesAdmin(admin.ModelAdmin):
     list_display = ['title', 'food','image_tag']
