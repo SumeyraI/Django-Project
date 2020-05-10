@@ -14,89 +14,87 @@
     <div id="contact-page" class="container">
 
 
-            <div class="col-sm-12">
-             <h2 class="title text-center">Shopcart Food List</h2>
+        <div class="col-sm-12">
+            <h2 class="title text-center">Shopcart Food List</h2>
 
 
 
 
-                    <div class="table-responsive cart_info">
-                        <table class="table table-condensed">
-                            <thead>
-                            <tr class="cart_menu">
-                                <td class="text-center">Item</td>
-                                <td class="text-center">Name</td>
-                                <td class="text-center">Price</td>
-                                <td class="text-center">Quantity</td>
-                                <td class="text-center">Total</td>
-                                <td class="text-center">Delete Item</td>
-                            </tr>
-                            </thead>
-                            <tbody>
+            <div class="table-responsive cart_info">
+                <table class="table table-condensed">
+                    <thead>
+                    <tr class="cart_menu">
+                        <td class="text-center">Item</td>
+                        <td class="text-center">Name</td>
+                        <td class="text-center">Price</td>
+                        <td class="text-center">Quantity</td>
+                        <td class="text-center">Total</td>
+                        <td class="text-center">Delete Item</td>
+                    </tr>
+                    </thead>
+                    <tbody>
 
-                            {% for rs in shopcart %}
+                    {% for rs in shopcart %}
 
+                        <tr>
+                            <td class="text-center">
+                                <a href=""><img src="{{rs.product.image.url}}" style="width: 100px" height="60px" alt=""></a>
+                            </td>
+                            <td class="text-center">
+                                <h4>{{rs.product}}</h4>
+
+                            </td>
+                            <td class="text-center">
+                                <strong>₺{{ rs.product.price }}</strong><br>
+                            </td>
+                            <td class="text-center">
+                                <div class="cart_quantity_button">
+                                    <strong> {{ rs.quantity }}</strong>
+
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <h4>{{rs.amount}}</h4>
+
+                            </td>
+
+                            <td class="text-center">
+                                <a class="cart_quantity_delete" href="/order/deletefromcart/{{ rs.id }}" onclick="return confirm('Are you sure want to delete this item?')"><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+
+
+                    <tr>
+                        <td colspan="4">&nbsp;</td>
+                        <td colspan="2">
+                            <table class="table table-condensed total-result">
                                 <tr>
-                                    <td class="text-center">
-                                        <a href=""><img src="{{rs.product.image.url}}" style="width: 100px" height="60px" alt=""></a>
-                                    </td>
-                                    <td class="text-center">
-                                        <h4>{{rs.product}}</h4>
-
-                                    </td>
-                                    <td class="text-center">
-                                        <strong>₺{{ rs.product.price }}</strong><br>
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="cart_quantity_button">
-                                            <strong> {{ rs.quantity }}</strong>
-
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <h4>{{rs.amount}}</h4>
-
-                                    </td>
-
-                                    <td class="text-center">
-                                        <a class="cart_quantity_delete" href="/order/deletefromcart/{{ rs.id }}" onclick="return confirm('Are you sure want to delete this item?')"><i class="fa fa-times"></i></a>
-                                    </td>
+                                    <td>Cart Sub Total</td>
+                                    <td>₺{{total}}</td>
                                 </tr>
-                            {% endfor %}
+                                <tr class="shipping-cost">
+                                    <td>Shipping Cost</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td><span>₺{{total}}</span></td>
+                                </tr>
 
+                            </table>
+                        </td>
+                    </tr>
 
+                    </tbody>
 
-                            <tr>
-                                <td colspan="4">&nbsp;</td>
-                                <td colspan="2">
-                                    <table class="table table-condensed total-result">
-                                        <tr>
-                                            <td>Cart Sub Total</td>
-                                            <td>₺{{total}}</td>
-                                        </tr>
-                                        <tr class="shipping-cost">
-                                            <td>Shipping Cost</td>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total</td>
-                                            <td><span>₺{{total}}</span></td>
-                                        </tr>
-
-                                    </table>
-                                </td>
-                            </tr>
-
-                            </tbody>
-
-                        </table>
-                    </div>
-
-
+                </table>
             </div>
-    <div class="form-group col-md-12">
-                                <input type="submit" name="submit" class="btn btn-primary pull-right" value="Place Order">
-                            </div>
+        </div>
+        <div class="form-group col-md-12">
+            <a href="/order/orderproduct"><input type="submit" name="submit" class="btn btn-primary pull-right" value="Place Order"></a>
+        </div>
 
         <div class="row">
 
