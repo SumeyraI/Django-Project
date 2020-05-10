@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="26.video uye paneli ve Profil bilgileri yapıldı.">
-      <change afterPath="$PROJECT_DIR$/order/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/templates/Shopcart_products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
+    <list default="true" id="3f861eac-af7a-432d-afc3-2b6c8e1f1590" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/products_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +151,8 @@
       <workItem from="1589028532022" duration="1149000" />
       <workItem from="1589037030587" duration="6255000" />
       <workItem from="1589052678209" duration="12764000" />
-      <workItem from="1589104393640" duration="15340000" />
+      <workItem from="1589104393640" duration="15441000" />
+      <workItem from="1589121149404" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="6.video : Hazır Web Template Uyarlaması Yapıldı.">
       <created>1586172601432</created>
@@ -265,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589064592744</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="28.video sepete ürün ekleme listeleme yapıldı.">
+      <created>1589119784485</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589119784485</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,20 +281,21 @@
     <MESSAGE value="19 ve 20. videolar kullanıcı yorum ekleme ve arama çubuğu yapıldı." />
     <MESSAGE value="21 , 22 , 23 , 24 , 25.videolar yapıldı; otomatik slug oluşturma , user login ve logout işlemleri, user sign up formu, üye profil resmi yapıldı." />
     <MESSAGE value="26.video uye paneli ve Profil bilgileri yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="26.video uye paneli ve Profil bilgileri yapıldı." />
+    <MESSAGE value="28.video sepete ürün ekleme listeleme yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="28.video sepete ürün ekleme listeleme yapıldı." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="126" y="12" key="CommitChangelistDialog2" timestamp="1589064607514">
+    <state x="126" y="12" key="CommitChangelistDialog2" timestamp="1589119783953">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="126" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589064607514" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1589064620721">
+    <state x="126" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589119783953" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1589119797158">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589064620721" />
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1589104401016">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589119797158" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1589121170343">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1589104401016" />
+    <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1589121170343" />
   </component>
 </project>

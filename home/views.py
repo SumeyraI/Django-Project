@@ -9,9 +9,11 @@ from django.shortcuts import render
 from food.models import Food, Category, Images, Comment
 from home.forms import SearchForm, SignUpForm
 from home.models import Setting, ContactFormu, ContactFormMessage
+from order.models import ShopCart
 
 
 def index(request):
+    current_user = request.user
     setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     sliderdata = Food.objects.all()[:10]
@@ -19,6 +21,7 @@ def index(request):
     dayproducts = Food.objects.all()[:4]
     lastproducts = Food.objects.all().order_by('-id')[:4]
     randomproducts = Food.objects.all().order_by('?')[:4]
+    request.session['cart_items'] = ShopCart.objects.filter(user_id=current_user.id).count()
 
 
 
