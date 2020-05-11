@@ -1,0 +1,138 @@
+{% extends "homebase.html" %}
+
+{% block title %} Order Detail  {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %} {% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+
+
+        <div class="bg">
+            <div class="row">
+
+
+
+                <div class="col-sm-3">
+                    <div class="contact-form">
+                        <h2 class="title text-center">User Panel</h2>
+                        <div class="status alert alert-success" style="display: none"></div>
+
+                        {% include "user_panel.html" %}
+
+
+
+
+                    </div><br>
+
+
+
+
+                </div>
+
+
+                <div class="col-sm-9">
+
+                <h2 class="title text-center"> Order Shipping Information </h2>
+
+
+                <table class="table table-condensed">
+
+
+                        <tr>
+                            <th class="text-left">Name Surname</th>
+                            <td class="text-left">{{order.user_name}}</td>
+                        </tr>
+
+                        <tr>
+                            <th class="text-left">Phone</th>
+                            <td class="text-left">{{order.phone}}</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Address</th>
+                            <td class="text-left">{{order.address}}</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">City</th>
+                            <td class="text-left">{{order.city}}</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Country</th>
+                            <td class="text-left">{{order.country}}</td>
+                        </tr>
+
+                     <tr>
+                            <th class="text-left">Status</th>
+                            <td class="text-left">{{order.status}}</td>
+                        </tr>
+
+                     <tr>
+                            <th class="text-left">Create At</th>
+                            <td class="text-left">{{order.create_at}}</td>
+                        </tr>
+                    <tr>
+                            <th class="text-left">Note</th>
+                            <td class="text-left">{{order.adminnote}}</td>
+                        </tr>
+
+
+                        </tr>
+
+                    </table>
+
+
+
+
+                    <h2 class="title text-center">Order Item List</h2>
+
+
+                    <table class="table table-condensed">
+
+                        <tr class="cart_menu">
+                            <th class="text-center">Id</th>
+                            <th class="text-center">Food Name</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Quantity</th>
+                            <th class="text-center">Amount</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Date</th>
+
+                        </tr>
+                        {% for rs in orderitems %}
+                            <tr>
+                                <td class="text-center">
+                                    <a href="/food/{{ rs.product_id }}/{{ rs.product.slug }}">
+                                        <img src="{{rs.product.image.url}}" style="width: 100px" height="60px">
+                                    </a>
+                                </td>
+                                <td class="text-center">{{rs.product.title}}</td>
+                                <td class="text-center">{{rs.price}}</td>
+                                <td class="text-center">{{rs.quantity}}</td>
+                                <td class="text-center">{{rs.amount}}</td>
+                                <td class="text-center">{{rs.status}}</td>
+                                <td class="text-center">{{rs.create_at}}</td>
+                            </tr>
+                        {% endfor %}
+
+
+                    </table>
+                    <br>
+                    <br>
+
+
+                </div>
+            </div>
+            <div class="row">
+
+
+            </div>
+        </div>
+    </div>
+    </div><!--/#contact-page-->
+{% endblock %}
