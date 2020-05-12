@@ -61,11 +61,11 @@
                             {% if user.id is not None %}
 
                                 <li>
-                                    <img class="media-object" src="{{profile.image.url}}" style="width: 60px" height="50px" alt="">
+                                    <img class="media-object" src="{{user.userprofile.image.url}}" style="width: 60px" height="50px" alt="">
                                 </li>
 
 
-                                <li class="dropdown"><a href="#"><i class="fa fa-user"></i>{{ user.first_name }}</a>
+                                <li class="dropdown"><a href="#">{{ user.first_name }}</a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="/user"><i class="fa fa-user"></i> My Account</a></li>
                                         <li><a href="/user/comments"><i class="fa fa-comment"></i> My Comments </a></li>
