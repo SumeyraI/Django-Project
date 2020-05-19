@@ -1,0 +1,106 @@
+{% extends "homebase.html" %}
+
+{% block title %} Order Comments  {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+{% block content %}
+    {% load static %}
+
+    <div id="contact-page" class="container">
+
+
+        <div class="bg">
+            <div class="row">
+
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">User Contents</li>
+                    </ol>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="contact-form">
+                        <h2 class="title text-center">User Panel</h2>
+                        <div class="status alert alert-success" style="display: none"></div>
+
+                        {% include "user_panel.html" %}
+
+                    </div><br>
+
+                </div>
+
+
+                <div class="col-sm-10">
+                    <h2 class="title text-center"> User Contents List</h2>
+
+                    <table class="table table-condensed">
+
+                        <tr class="cart_menu">
+
+                        <tr>
+
+                            <th class="text-left">
+                                <a href="/user/addcontent" type="submit" class="btn btn-default get">Add Contents</a>
+
+                            </th>
+                        </tr>
+
+                        <th class="text-left">Image</th>
+                        <th class="text-left">Title</th>
+                        <th class="text-left">Type</th>
+                        <th class="text-left">Menu</th>
+                        <th class="text-center">Gallery</th>
+                        <th class="text-left">Status</th>
+                        <th class="text-left">Date</th>
+                        <th class="text-center">Detail</th>
+                        </tr>
+
+                        {% for rs in contents %}
+
+                            <tr>
+
+                                <td class="text-left">
+                                    <a href="/content/{{ rs.id }}/{{ rs.slug}}">
+                                        <img src="{{ rs.image.url }}" style="height: 30px;">
+                                    </a>
+                                </td>
+                                <td class="text-left">
+                                    <a href="/content/{{ rs.id }}/{{ rs.slug}}">
+                                        {{rs.title}}
+                                    </a>
+                                </td>
+                                <td class="text-left">{{rs.type}}</td>
+                                <td class="text-left">{{rs.menu.title}}</td>
+
+                                <td class="text-center">
+                                    <a href="javascript:;" onclick="window.open('/user/contentaddimage/{{ rs.id }}', 'gallery', 'height=600,width=800,top=50,left=150')">
+                                        <img style="height: 60px" src="{% static '' %}img/gallery.png"></a>
+                                </td>
+
+                                <td class="text-left">{{rs.status}}</td>
+                                <td class="text-left">{{rs.create_at}}</td>
+
+                                <td class="text-left"><a class="btn btn-warning" href="/user/contentedit/{{ rs.id }}"> Edit </a> </td>
+
+                                <td class="text-left"><a href="/user/contentdelete/{{ rs.id }}" onclick="return confirm('Are you sure want to delete ?')" type="submit" class="btn btn-danger">Delete</a></td>
+
+                            </tr>
+                        {% endfor %}
+
+                    </table>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    </div><!--/#contact-page-->
+{% endblock %}

@@ -6,9 +6,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from content.models import Menu, Content, CImages
 from food.models import Food, Category, Images, Comment
 from home.forms import SearchForm, SignUpForm
-from home.models import Setting, ContactFormu, ContactFormMessage
+from home.models import Setting, ContactFormu, ContactFormMessage, UserProfile
 from order.models import ShopCart
 
 
@@ -16,18 +17,20 @@ def index(request):
     current_user = request.user
     setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
+    menu = Menu.objects.all()
     sliderdata = Food.objects.all()[:10]
-
     dayproducts = Food.objects.all()[:4]
     lastproducts = Food.objects.all().order_by('-id')[:4]
     randomproducts = Food.objects.all().order_by('?')[:4]
     request.session['cart_items'] = ShopCart.objects.filter(user_id=current_user.id).count()
-
-
-
+    gift = Content.objects.filter(type='HEDİYE').order_by('-id')[:4]
+    kampanya = Content.objects.filter(type='KAMPANYA').order_by('-id')[:4]
 
     context = {'setting': setting,
                'page':'home',
+               'menu': menu,
+               'kampanya': kampanya,
+               'gift': gift,
                'category':category,
                'sliderdata':sliderdata,
                'dayproducts':dayproducts,
@@ -180,6 +183,12 @@ def signup_view(request):
             password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
             login(request, user)
+            current_user = request.user
+            data=UserProfile()
+            data.user_id=current_user.id
+            data.image="images/users/user.png"
+            data.save()
+            messages.success(request, "Hoş Geldiniz.. Sitemize başarılı bir şekilde üye oldunuz.Şimdiden afiyet olsun..")
             return HttpResponseRedirect('/')
 
 
@@ -194,3 +203,28 @@ def signup_view(request):
     return render(request, 'signup.html', context)
 
 
+def menu(request,id):
+    try:
+        content = Content.objects.get(menu_id=id)
+        link='/content/'+str(content.id)+'/menu'
+        return HttpResponseRedirect(link)
+
+    except:
+        messages.warning(request, "Hata ! İlgili içerik buunamadı")
+        link='/'
+        return HttpResponseRedirect(link)
+
+def contentdetail(request,id,slug):
+    category = Category.objects.all()
+    menu = Menu.objects.all()
+    content = Content.objects.get(pk=id)
+    images = CImages.objects.filter(content_id=id)
+
+    context = {
+        'category': category,
+        'content': content,
+        'menu': menu,
+        'images': images,
+
+    }
+    return render(request, 'content_detail.html', context)

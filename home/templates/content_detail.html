@@ -1,0 +1,45 @@
+{% extends "homebase.html" %}
+
+{% block title %} Gift Detail{{ setting.company }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %} {% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="col-sm-12">
+                <div class="row">
+                     <div class="breadcrumbs">
+                            <ol class="breadcrumb">
+                                <li><a href="/">Home</a></li>
+                                <li class="active">Gift Detail</li>
+                            </ol>
+                        </div>
+
+
+
+                    <img src="{{ content.image.url }}" height="300" width="350" align="left" style="padding: 10px; border-radius: 25px;"><br>
+
+                    <hr>
+                    {{content.detail|safe}}
+                </div>
+
+                <div class="row">
+
+                    {% for rs in images %}
+                        <span><img src="{{ rs.image.url }}" height="200" width="300" alt=""></span>
+                    {% endfor %}
+
+
+                </div><br><br><hr>
+
+            </div>
+        </div>
+    </div><!--/#contact-page-->
+{% endblock %}

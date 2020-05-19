@@ -7,9 +7,6 @@
 {% block head %}
     <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
 {% endblock %}
-
-{% block sidebar %} {% endblock %}
-
 {% block content %}
     <div id="contact-page" class="container">
         <div class="bg">
@@ -20,7 +17,7 @@
 
                         <div class="breadcrumbs">
                             <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="#">Foods</a></li>
                                 <li><a href="/category/{{ product.category_id }}/{{ product.category.slug }}">{{ product.category }}</a></li>
                                 <li class="active">{{ product.title }}</li>
@@ -43,6 +40,7 @@
                                                         <div class="mainmenu pull-left">
                                                             {% load mptt_tags %}
                                                             <ul class="nav navbar-nav collapse navbar-collapse">
+
                                                                 {% recursetree category %}
                                                                     <br><li   {% if not node.is_leaf_node %} class="dropdown" aria-expanded="true" {% endif %}><a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}{% if not node.is_leaf_node %}<i class="fa fa-angle-down"></i>{% endif %}</a>
 
@@ -54,6 +52,7 @@
                                                                     {% endif %}
                                                                 </li>
                                                                 {% endrecursetree %}
+
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -64,20 +63,7 @@
 
 
                                             </div><!--/category-products-->
-                                            <div class="brands_products"><!--brands_products-->
-                                                <h2>Brands</h2>
-                                                <div class="brands-name">
-                                                    <ul class="nav nav-pills nav-stacked">
-                                                        <li><a href=""> <span class="pull-right">(50)</span>Acne</a></li>
-                                                        <li><a href=""> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-                                                        <li><a href=""> <span class="pull-right">(27)</span>Albiro</a></li>
-                                                        <li><a href=""> <span class="pull-right">(32)</span>Ronhill</a></li>
-                                                        <li><a href=""> <span class="pull-right">(5)</span>Oddmolly</a></li>
-                                                        <li><a href=""> <span class="pull-right">(9)</span>Boudestijn</a></li>
-                                                        <li><a href=""> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div><!--/brands_products-->
+
                                         </div>
                                     </div>
 
@@ -121,7 +107,7 @@
 
                                                     <img src="{% static 'images/product-details/rating.png' %}" alt="" />
                                                     <span>
-                                                        <p>{{ product.description }}</p>
+                                                        
 									<span>{{ product.price }}₺</span>
 
                                     <form action="/order/addtocart/{{ product.id }}" method="post">
@@ -137,7 +123,7 @@
 								</span>
 
                                                     <p><b>Condition:</b> New</p>
-                                                    <p><b>Brand:</b> E-SHOPPER</p>
+                                                   
                                                     <a href=""><img src="{% static 'images/product-details/share.png' %}" class="share img-responsive"  alt="" /></a>
                                                 </div><!--/product-information-->
                                             </div>

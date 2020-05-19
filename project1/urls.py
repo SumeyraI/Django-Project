@@ -30,6 +30,9 @@ urlpatterns = [
     path('food/', include('food.urls')),
     path('user/', include('user.urls')),
     path('order/', include('order.urls')),
+    path('content/', include('content.urls')),
+    path('content/<int:id>/<slug:slug>/', views.contentdetail, name='contentdetail'),
+    path('menu/<int:id>', views.menu, name='menu'),
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('category/<int:id>/<slug:slug>/', views.category_products, name='category_products'),
@@ -40,6 +43,7 @@ urlpatterns = [
     path('login/', views.login_view, name='login_view'),
     path('signup/', views.signup_view, name='signup_view'),
     path('shopcart/', orderviews.shopcart, name='shopcart'),
+    path('sss/', orderviews.faq, name='faq'),
 
 
 

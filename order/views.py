@@ -7,7 +7,7 @@ from django.shortcuts import render
 from django.utils.crypto import get_random_string
 
 from food.models import Category, Food
-from home.models import UserProfile
+from home.models import UserProfile, FAQ
 from order.models import ShopCartForm, ShopCart, OrderForm, Order, OrderProduct
 
 
@@ -64,7 +64,7 @@ def addtocart(request,id):
 
     return HttpResponseRedirect(url)
 
-@login_required(login_url='/login') #sepetten silme işlemi
+@login_required(login_url='/login')
 def shopcart(request):
     category = Category.objects.all()
     current_user = request.user
@@ -82,7 +82,7 @@ def shopcart(request):
     return render(request, 'Shopcart_products.html', context)
 
 @login_required(login_url='/login')
-def deletefromcart(request,id):
+def deletefromcart(request,id):      #ürünü sepetten silme
     ShopCart.objects.filter(id=id).delete()
 
     current_user = request.user
@@ -141,7 +141,7 @@ def orderproduct(request):  #siparis edilen urunu kaydediyoruz.
 
             ShopCart.objects.filter(user_id=current_user.id).delete() # Clear & Delete shopcart
             request.session['cart_items']=0
-            messages.success(request, "Your Order has been completed. Thank You ")
+            messages.success(request, "Your Order has been completed.  Thank You ")
             return render(request, 'Order_Completed.html',{'ordercode':ordercode,'category':category})
         else:
             messages.warning(request, form.errors)
@@ -156,3 +156,14 @@ def orderproduct(request):  #siparis edilen urunu kaydediyoruz.
                'profile':profile,
                }
     return render(request, 'Order_Form.html', context)
+
+
+def faq(request):
+    category = Category.objects.all()
+    faq=FAQ.objects.all().order_by('ordernumber')
+    context = {
+               'category': category,
+               'faq': faq,
+
+               }
+    return render(request, 'faq.html', context)

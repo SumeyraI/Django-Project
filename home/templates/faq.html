@@ -1,0 +1,51 @@
+{% extends "homebase.html" %}
+
+{% block title %} Sıkça Sorulan Sorular {% endblock %}
+{% block keywords %}{% endblock %}
+{% block description %}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true
+            });
+        } );
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="row">
+
+
+              <div class="breadcrumbs">
+                            <ol class="breadcrumb">
+                                <li><a href="/">Home</a></li>
+                                <li class="active">Sık Sorulan Sorular</li>
+                            </ol>
+                        </div>
+
+
+                <div class="col-sm-12">
+                    <div id="gmap" class="contact-map">
+
+                        <div id="accordion">
+                            {% for rs in faq %}
+                                <h3>{{ rs.question }}</h3>
+                                <div>
+                                    <p>{{ rs.answer }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div><!--/#contact-page-->
+{% endblock %}

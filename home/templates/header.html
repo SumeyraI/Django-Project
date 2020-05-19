@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="contactinfo">
-                    <br>
+                        <br>
                         {% if messages %}
                             {% for message in messages %}
                                 <div class="alert alert-{{ message.tags }}" role="alert">
@@ -19,49 +19,44 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
+
                     <div class="social-icons pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="{{ setting.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{ setting.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="{{ setting.instagram }}"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
+
+                    <div class="search_box pull-right">
+                        <ul class="nav navbar-nav">
+
+                            <li><b><a class="text-center" href="/sss">SIKÇA SORULAN SORULAR</a></b></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div><!--/header_top-->
-
-
-
-
-
-
-
-
-
-
     <div class="header-middle"><!--header-middle-->
         <div class="container">
             <div class="row">
                 <div class="col-md-4 clearfix">
                     <div class="logo pull-left">
-                        <a href="/"><img src="{% static 'images/home/logo.png' %}" alt="" /></a>
+                        <a href="/"> <img style="height: 120px; width: 140px;" src="{% static '' %}img/ymk.png"></a>
                     </div>
                 </div>
                 <div class="col-md-8 clearfix">
                     <div class="mainmenu pull-right">
                         <ul class="nav navbar-nav">
 
-
-
-
-
                             {% if user.id is not None %}
 
                                 <li>
-                                    <img class="media-object" src="{{user.userprofile.image.url}}" style="width: 60px" height="50px" alt="">
+                                    <img class="media-object" src="{{user.userprofile.image.url}}" style="width: 70px" height="60px" alt="">
                                 </li>
 
 
@@ -70,7 +65,7 @@
                                         <li><a href="/user"><i class="fa fa-user"></i> My Account</a></li>
                                         <li><a href="/user/comments"><i class="fa fa-comment"></i> My Comments </a></li>
                                         <li><a href="/user/orders"><i class="fa fa-crosshairs"></i> My Orders</a></li>
-                                        <li><a href="/user/favorits"><i class="fa fa-star"></i> My Favorites</a></li>
+                                        <li><a href="/user/contents"><i class="fa fa-star"></i> My Contents</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/shopcart/"><i class="fa fa-shopping-cart"></i>My Cart( {{ request.session.cart_items }} )
@@ -88,9 +83,6 @@
                                 <li><a href="/signup/"><i class="fa fa-heart"></i> Sign Up</a></li>
 
 
-
-
-
                             {% endif %}
 
                         </ul>
@@ -99,11 +91,6 @@
             </div>
         </div>
     </div><!--/header-middle-->
-
-
-
-
-
 
 
     <div class="header-bottom"><!--header-bottom-->
@@ -184,8 +171,6 @@
                                     {% endif %}
                                 {%  endrecursetree %}
                             </select>
-
-
 
 
                         </form>

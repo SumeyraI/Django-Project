@@ -8,8 +8,6 @@
     <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
 {% endblock %}
 
-{% block sidebar %} {% endblock %}
-
 {% block content %}
     <div id="contact-page" class="container">
         <div class="bg">
@@ -17,10 +15,10 @@
                 <div class="col-sm-12">
                     <div id="gmap" class="contact-map">
 
-                    <div class="breadcrumbs">
+                        <div class="breadcrumbs">
                             <ol class="breadcrumb">
-                                <li><a href="/">Anasayfa</a></li>
-                               <li class="active">{{ categorydata.title }}</li>
+                                <li><a href="/">Home</a></li>
+                                <li class="active">Eşleşen Ürünler</li>
                             </ol>
                         </div><!--/breadcrums-->
 
@@ -34,12 +32,12 @@
                             </tr>
                             {% for rs in products %}
 
-                            <tr>
-                                <td><a href="/food/{{ rs.id }}//{{ rs.slug }}"><img src="{{ rs.image.url }}" style="width: 100px" height="80px"> </a> </td>
-                                <td><h4 class="product-name"><a href="/food/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
-                                <td><a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a> </td>
-                                <td><h4>{{ rs.price }}₺</h4></td>
-                            </tr>
+                                <tr>
+                                    <td><a href="/food/{{ rs.id }}//{{ rs.slug }}"><img src="{{ rs.image.url }}" style="width: 100px" height="80px"> </a> </td>
+                                    <td><h4 class="product-name"><a href="/food/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
+                                    <td><a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a> </td>
+                                    <td><h4>{{ rs.price }}₺</h4></td>
+                                </tr>
                             {% endfor %}
 
                         </table>
@@ -49,9 +47,6 @@
                 </div>
             </div>
             <div class="row">
-
-
-
             </div>
         </div>
     </div><!--/#contact-page-->

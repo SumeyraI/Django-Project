@@ -43,7 +43,7 @@ class Category(MPTTModel):
     image_tag.short_description = 'Image'
 
 
-    def get_absolute_url(self):
+    def get_absolute_url(self): #otomatik slug oluşturuyoruzz
         return reverse('category_detail', kwargs={'slug': self.slug})
 
 
