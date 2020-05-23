@@ -73,7 +73,7 @@ def shopcart(request):
 
     total=0
     for rs in shopcart:
-        total += rs.product.price * rs.quantity
+        total += rs.product.price * rs.quantity  #ürün sayısı ile fiyatını carptık. toplama ekledik.
 
     context = {'shopcart': shopcart,
                'category': category,

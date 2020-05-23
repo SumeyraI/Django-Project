@@ -14,28 +14,28 @@
 
                 <div class="col-sm-12">
 
-                 <div class="breadcrumbs">
-                            <ol class="breadcrumb">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/login/">Login</a></li>
+                    <div class="breadcrumbs">
+                        <ol class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/login/">Login</a></li>
 
-                            </ol>
-                        </div><!--/breadcrums-->
+                        </ol>
+                    </div><!--/breadcrums-->
 
                     <div class="contact-form">
                         <h2 class="title text-center">LOGIN FORMU</h2><br>
-                    <br>
-                    <br>
+                        <br>
+                        <br>
                         <div class="status alert alert-success" style="display: none"></div>
 
 
                         {% if messages %}
-                        {%  for message in messages %}
-                            <div class="alert alert-{{ message.tags}}" role="alert">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    {% endif %}
+                            {%  for message in messages %}
+                                <div class="alert alert-{{ message.tags}}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
 
                         <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
 
@@ -59,12 +59,12 @@
                 </div>
 
 
-        </div>
-        <div class="row">
+            </div>
+            <div class="row">
 
 
+            </div>
         </div>
-    </div>
     </div>
     </div><!--/#contact-page-->
 {% endblock %}

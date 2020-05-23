@@ -13,12 +13,12 @@
             <div class="row">
 
 
-            <div class="breadcrumbs">
-                            <ol class="breadcrumb">
-                                <li><a href="/">Home</a></li>
-                                <li class="active">İletişim</li>
-                            </ol>
-                        </div><!--/breadcrums-->
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">İletişim</li>
+                    </ol>
+                </div><!--/breadcrums-->
 
                 <div class="col-sm-4">
                     <div class="contact-form">
@@ -27,12 +27,12 @@
 
 
                         {% if messages %}
-                        {%  for message in messages %}
-                            <div class="alert alert-{{ message.tags}}" role="alert">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    {% endif %}
+                            {%  for message in messages %}
+                                <div class="alert alert-{{ message.tags}}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
 
                         <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
 
@@ -61,16 +61,16 @@
                 </div>
 
 
-            <div class="col-sm-8">
-                <h2 class="title text-center">İLETİŞİM BİLGİLERİMİZ</h2>
-                {{setting.contact | safe}}
+                <div class="col-sm-8">
+                    <h2 class="title text-center">İLETİŞİM BİLGİLERİMİZ</h2>
+                    {{setting.contact | safe}}
+                </div>
+            </div>
+            <div class="row">
+
+
             </div>
         </div>
-        <div class="row">
-
-
-        </div>
-    </div>
     </div>
     </div><!--/#contact-page-->
 {% endblock %}
