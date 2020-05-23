@@ -191,12 +191,15 @@
                                                             <div class="rating-area">
 
                                                                 <div class="ratings">
-                                                                    <input type="radio"  class="fa fa-star color" id="star5" name="rate" value="5" /><label for="star5"></label>
-                                                                    <input type="radio" class="fa fa-star color" id="star4" name="rate" value="4" /><label for="star4"></label>
-                                                                    <input type="radio" class="fa fa-star color" id="star3" name="rate" value="3" /><label for="star3"></label>
-                                                                    <input type="radio" class="fa fa-star color" id="star2" name="rate" value="2" /><label for="star2"></label>
-                                                                    <input type="radio" class="fa fa-star color" id="star1" name="rate" value="1" /><label for="star1"></label>
+                                                                    <p>Please choose yours rate for this food..</p>
+                                                                    <input type="radio"   id="star5" name="rate" value="5" /><label for="star5">5</label><br>
+                                                                    <input type="radio"  id="star4" name="rate" value="4" /><label for="star4">4</label><br>
+                                                                    <input type="radio"  id="star3" name="rate" value="3" /><label for="star3">3</label><br>
+                                                                    <input type="radio"  id="star2" name="rate" value="2" /><label for="star2">2</label><br>
+                                                                    <input type="radio"  id="star1" name="rate" value="1" /><label for="star1">1</label><br>
                                                                 </div><br><br>
+
+                                                             </div>
                                                                 {% if user.id is not None %}
                                                                     <button class="btn btn-default pull-right">
                                                                         Submit
@@ -204,7 +207,7 @@
                                                                 {% else %}
                                                                     Yorum Eklemek için <a href="/login">Login</a>  Olunuz!!
                                                                 {% endif %}
-                                                            </div>
+
                                                         </form>
 
 
