@@ -1,1 +1,1 @@
-"# Django Online Order Food Projesi" 
+"# Django Online Order Food Project" 
